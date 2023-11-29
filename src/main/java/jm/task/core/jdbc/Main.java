@@ -8,7 +8,6 @@ import static jm.task.core.jdbc.util.Util.getConnection;
 
 public class Main {
     public static void main(String[] args) {
-        Util.getConnection();
         UserDao userDao = new UserDaoJDBCImpl();
 
         userDao.createUsersTable();
